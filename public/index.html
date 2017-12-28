@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doggoes</title>
+</head>
+<body>
+
+    <form id="create-dog">
+        <input id="name" type="text" required placeholder="Name">
+        <select name="is_good_dog" id="is_good_dog">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+        <input id="breed" type="text" required placeholder="Breed">
+        <input id="age" type="number" required placeholder="Age">
+        <button>Submit</button>
+    </form>
+
+    <ul id='dogs'>
+    </ul>
+
+
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+    getDogs();
+    </script>
+</body>
+</html>
